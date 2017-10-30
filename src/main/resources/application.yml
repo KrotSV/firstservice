@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: first-service
+server:
+  port: 8070
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8585/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    preferIpAddress: false
